@@ -1,0 +1,32 @@
+.window-container {
+    width:240px;
+    height:100px;
+    padding:12px 16px;
+    background-color:white;
+    border:1px solid black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    .danger {
+        color:#FAAD14;
+        margin-right:8px;
+    }
+    .sure {
+        display:flex;
+        justify-content:flex-end;
+        margin-top:8px;
+        button {
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            border-radius: 4px;
+            &:hover {
+                background-color:#1890FF;
+                color:white;
+            }
+        }
+
+    }
+}

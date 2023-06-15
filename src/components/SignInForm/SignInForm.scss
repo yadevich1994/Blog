@@ -1,0 +1,80 @@
+.SignIn-container {
+    box-sizing:border-box;
+    width:384px;
+    margin:60px auto 0 auto;
+    background-color:white;
+    padding:48px 32px 48px 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #262626;
+    h2 {
+        text-align:center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        padding:0;
+        margin:0 0 15px 0;
+    }
+    form {
+        input {
+            width:100%;
+            margin-bottom:12px;
+            padding:8px 12px;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.75);
+            background: #FFFFFF;
+            border: 1px solid #D9D9D9;
+            border-radius: 4px;
+        }
+        label {
+            display:block;
+            line-height: 22px;
+            color: #262626;
+        }
+    }   
+    .sign-up-agree {
+        border-top:1px solid #E8E8E8;
+        padding: 8px 42px 0 0;
+        display:flex;
+        align-items:flex-start;
+        margin-bottom:21px;
+        input {
+            width:16px;
+            height:16px;
+            margin-right:8px;
+        }
+        label {
+            color: #595959;
+        }
+    }
+    .sign-in-submit {
+        width:100%;
+        height: 40px;
+        background: #1890FF;
+        border-radius: 4px;
+        color:white;
+        border:none;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom:8px;
+        &:hover {
+            background-color:aquamarine
+        }
+    }
+    .sign-up-refuse {
+        line-height: 20px;
+        text-align: center;
+        color: #8C8C8C;
+        display:flex;
+        justify-content:center;
+    }
+    a {
+        margin:0 0 0 4px;
+        padding:0;
+        color:rgba(24, 144, 255, 1)
+    }
+}

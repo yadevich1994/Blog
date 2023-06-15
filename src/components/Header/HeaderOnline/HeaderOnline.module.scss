@@ -1,0 +1,50 @@
+.container {
+    display:flex;
+    align-items:center;
+    .create {
+        color:#52C41A;
+        border: 1px solid #52C41A;
+        border-radius: 5px;
+        background-color:transparent;
+        padding:6px 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-right:20px;
+        &:hover {
+            cursor:pointer;
+        }
+    }
+    .name {
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.85);
+        margin-right:13px;
+        vertical-align:center;
+    }
+    .logOut {
+        background-color:transparent;
+        width: 109px;
+        height: 51px;
+        border: 1px solid rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.75);
+        &:hover {
+            cursor:pointer;
+            background-color:gray
+        }
+    }
+    .img {
+        width:46px;
+        height:46px;
+        box-sizing:border-box;
+        margin-right:27px;
+        border:none;
+        img {
+            width:46px;
+            height:46px;
+        }
+    }
+}

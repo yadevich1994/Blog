@@ -1,0 +1,82 @@
+{  
+    "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "es6":true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",//
+        "plugin:@typescript-eslint/recommended",//
+        "plugin:import/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "airbnb/base",
+        "plugin:prettier/recommended",
+        "prettier",
+        "plugin:react-hooks/recommended"//
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "globalReturn":true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "import"
+    ],
+    "rules": {
+        "semi":"off",
+        "no-unused-vars": "off",
+        "linebreak-style": [0, "unix"],
+        "no-tabs":"off",
+        "no-console":"off",
+        "no-plusplus":"off",
+        "no-alert":"off",
+        "no-param-reassign":"off",
+        "require-jsdoc": "off",
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+        "eol-last":"off",
+        "max-len":["error",125],
+        "@typescript-eslint/ban-ts-comment": "off",//комментарии добавил
+        "@typescript-eslint/ban-types": "off", // разрешение использование всех типов
+        "prefer-destructuring":"off",
+        "import/default": 0,
+        "import/namespace": 0,
+        "import/no-unresolved": [2, { "caseSensitive": false }],
+        "import/extensions":"off",
+        "class-methods-use-this":"off",
+        "react-hooks/exhaustive-deps": "off",
+        "@typescript-eslint/no-non-null-assertion":"off",
+        "import/prefer-default-export":"off",
+        "import/order": [
+            2,
+            {
+              "groups": [
+                "builtin",
+                "external",
+                "internal",
+                "parent",
+                "sibling",
+                "index"
+              ],
+              "newlines-between": "always"
+            }
+          ]
+    }
+}
